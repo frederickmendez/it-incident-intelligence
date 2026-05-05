@@ -37,3 +37,10 @@ coverage/
 Thumbs.db
 .vscode/
 .idea/
+
+# Internal build docs
+AGENTS.md
+directives/
+execution/
+frontend/README.md
+docs/*.md

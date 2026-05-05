@@ -1,3 +1,5 @@
+import type { RiskLevel } from "@/lib/shared/riskLevels";
+
 export type CloudProvider = "AWS" | "Azure" | "GCP";
 
 export type CloudEnvironment =
@@ -55,4 +57,64 @@ export type CloudResource = {
   waste_signals: CloudWasteSignal[];
   owner: CloudOwner;
   tags: Record<string, string>;
+};
+
+export type CloudResourceRecord = {
+  id: string;
+  provider: CloudProvider;
+  accountId: string;
+  region: string;
+  resourceType: string;
+  serviceName: string;
+  resourceName: string;
+  environment: CloudEnvironment;
+  ownerTeam: string;
+  costCenter: string;
+  status: CloudResourceStatus;
+  monthlyCostUsd: number;
+  estimatedMonthlyWasteUsd: number;
+  cpuUtilizationPercent: number;
+  memoryUtilizationPercent: number;
+  storageUsedPercent: number;
+  lastActivityAt: string;
+  riskLevel: RiskLevel;
+  wasteReason: string;
+  recommendedAction: string;
+};
+
+export type CloudOptimizationCandidate = CloudResourceRecord & {
+  computedRiskScore: number;
+  computedRiskLevel: RiskLevel;
+};
+
+export type CloudProviderBreakdown = {
+  provider: CloudProvider;
+  totalMonthlyWasteUsd: number;
+  resourceCount: number;
+};
+
+export type CloudResourceTypeBreakdown = {
+  resourceType: string;
+  totalMonthlyWasteUsd: number;
+  resourceCount: number;
+};
+
+export type CloudCostAnalysis = {
+  summary: {
+    totalResources: number;
+    optimizationCandidates: number;
+    totalMonthlyWasteUsd: number;
+    healthySpendUsd: number;
+    recoverableSpendRatio: number;
+    idleServers: number;
+    unattachedDisks: number;
+    orphanedResources: number;
+    highestCostWasteUsd: number;
+    dominantRiskLevel: RiskLevel;
+  };
+  byProvider: CloudProviderBreakdown[];
+  byResourceType: CloudResourceTypeBreakdown[];
+  recommendedActions: string[];
+  financialImpactSummary: string;
+  items: CloudOptimizationCandidate[];
 };

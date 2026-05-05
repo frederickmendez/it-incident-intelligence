@@ -1,9 +1,9 @@
 import { AppShell } from "@/components/layout/AppShell";
-import { OverviewDashboard } from "@/components/overview/OverviewDashboard";
+import { SentinelDashboard } from "@/components/sentinel-insight/SentinelDashboard";
 import { normalizeEnvironmentScenario } from "@/lib/shared/environment-scenario";
 import { getDashboardSummary } from "@/lib/shared/dashboard-summary";
 
-export default async function Home({
+export default async function SentinelInsightPage({
   searchParams,
 }: {
   searchParams?: Promise<{ env?: string | string[] | undefined }>;
@@ -14,14 +14,14 @@ export default async function Home({
 
   return (
     <AppShell
-      moduleTitle="Overview"
-      moduleEyebrow="Overview Command Center"
+      moduleTitle="Sentinel Insight"
+      moduleEyebrow="Security Operations"
       globalRiskScore={summary.globalRiskScore}
       globalRiskLevel={summary.globalRiskLevel}
       lastUpdated={new Date().toISOString()}
       currentScenario={scenario}
     >
-      <OverviewDashboard summary={summary} />
+      <SentinelDashboard analysis={summary.sentinel} />
     </AppShell>
   );
 }

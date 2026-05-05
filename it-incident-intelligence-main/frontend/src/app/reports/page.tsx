@@ -1,9 +1,9 @@
 import { AppShell } from "@/components/layout/AppShell";
-import { OverviewDashboard } from "@/components/overview/OverviewDashboard";
+import { ReportsDashboard } from "@/components/reports/ReportsDashboard";
 import { normalizeEnvironmentScenario } from "@/lib/shared/environment-scenario";
 import { getDashboardSummary } from "@/lib/shared/dashboard-summary";
 
-export default async function Home({
+export default async function ReportsPage({
   searchParams,
 }: {
   searchParams?: Promise<{ env?: string | string[] | undefined }>;
@@ -14,14 +14,14 @@ export default async function Home({
 
   return (
     <AppShell
-      moduleTitle="Overview"
-      moduleEyebrow="Overview Command Center"
+      moduleTitle="Reports"
+      moduleEyebrow="Executive Summary Center"
       globalRiskScore={summary.globalRiskScore}
       globalRiskLevel={summary.globalRiskLevel}
       lastUpdated={new Date().toISOString()}
       currentScenario={scenario}
     >
-      <OverviewDashboard summary={summary} />
+      <ReportsDashboard summary={summary} />
     </AppShell>
   );
 }

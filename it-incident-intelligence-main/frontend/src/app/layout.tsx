@@ -1,6 +1,12 @@
 import type { Metadata } from "next";
-import { Inter, JetBrains_Mono } from "next/font/google";
+import { Bricolage_Grotesque, Inter, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
+
+const bricolage = Bricolage_Grotesque({
+  variable: "--font-heading",
+  subsets: ["latin"],
+  display: "swap",
+});
 
 const inter = Inter({
   variable: "--font-sans",
@@ -15,9 +21,9 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "IT Incident Intelligence System",
+  title: "Nexus IT Operations & Security Suite",
   description:
-    "Enterprise operations dashboard for recurring incident detection, anomaly analysis, and explainable auto-priority scoring.",
+    "Production-inspired NexusOps mission-control platform for cloud cost, endpoint security, ticket prioritization, and SOC-style monitoring.",
 };
 
 export default function RootLayout({
@@ -28,7 +34,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${inter.variable} ${jetbrainsMono.variable} h-full antialiased`}
+      className={`${bricolage.variable} ${inter.variable} ${jetbrainsMono.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">{children}</body>
     </html>
