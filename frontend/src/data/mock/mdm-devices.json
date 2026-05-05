@@ -1,0 +1,140 @@
+[
+  {
+    "deviceId": "mdm-mac-1001",
+    "deviceName": "NYC-FIN-MBP-029",
+    "serialNumber": "C02ZX1FIN029",
+    "assignedUser": "Elena Martin",
+    "department": "Finance",
+    "location": "New York",
+    "platform": "macOS",
+    "osVersion": "14.2.1",
+    "model": "MacBook Pro 14",
+    "complianceStatus": "non_compliant",
+    "encryptionEnabled": true,
+    "firewallEnabled": false,
+    "screenLockEnabled": true,
+    "antivirusStatus": "healthy",
+    "lastCheckInAt": "2026-05-01T16:38:00Z",
+    "riskScore": 82,
+    "riskLevel": "high",
+    "riskReasons": [
+      "Firewall disabled on finance device.",
+      "OS release age exceeds current patch target."
+    ]
+  },
+  {
+    "deviceId": "mdm-ios-2214",
+    "deviceName": "FIELD-IPAD-2214",
+    "serialNumber": "F2LIPAD2214",
+    "assignedUser": "Jordan Price",
+    "department": "Field Sales",
+    "location": "Chicago",
+    "platform": "iOS",
+    "osVersion": "17.3",
+    "model": "iPad Pro 11",
+    "complianceStatus": "warning",
+    "encryptionEnabled": true,
+    "firewallEnabled": true,
+    "screenLockEnabled": true,
+    "antivirusStatus": "healthy",
+    "lastCheckInAt": "2026-05-01T12:10:00Z",
+    "riskScore": 91,
+    "riskLevel": "critical",
+    "riskReasons": [
+      "Jailbreak or root indicators detected.",
+      "Privileged device access risk requires immediate review."
+    ]
+  },
+  {
+    "deviceId": "mdm-win-7840",
+    "deviceName": "LDN-OPS-WIN-840",
+    "serialNumber": "PF3OPS7840",
+    "assignedUser": "Maya Patel",
+    "department": "Operations",
+    "location": "London",
+    "platform": "Windows",
+    "osVersion": "11 23H2",
+    "model": "ThinkPad T14",
+    "complianceStatus": "warning",
+    "encryptionEnabled": false,
+    "firewallEnabled": true,
+    "screenLockEnabled": true,
+    "antivirusStatus": "healthy",
+    "lastCheckInAt": "2026-04-28T08:05:00Z",
+    "riskScore": 68,
+    "riskLevel": "high",
+    "riskReasons": [
+      "Disk encryption is disabled.",
+      "Operations laptop handles supply chain workflows."
+    ]
+  },
+  {
+    "deviceId": "mdm-android-3318",
+    "deviceName": "BYOD-ANDROID-3318",
+    "serialNumber": "R58M33BYOD18",
+    "assignedUser": "Andre Lewis",
+    "department": "Customer Success",
+    "location": "Austin",
+    "platform": "Android",
+    "osVersion": "14",
+    "model": "Pixel 8",
+    "complianceStatus": "non_compliant",
+    "encryptionEnabled": true,
+    "firewallEnabled": false,
+    "screenLockEnabled": false,
+    "antivirusStatus": "missing",
+    "lastCheckInAt": "2026-04-19T21:45:00Z",
+    "riskScore": 88,
+    "riskLevel": "critical",
+    "riskReasons": [
+      "Screen lock is disabled.",
+      "Endpoint protection is missing.",
+      "Last MDM check-in is stale."
+    ]
+  },
+  {
+    "deviceId": "mdm-mac-4450",
+    "deviceName": "SFO-ENG-MBP-450",
+    "serialNumber": "C02ENG4450",
+    "assignedUser": "Sam Rivera",
+    "department": "Engineering",
+    "location": "San Francisco",
+    "platform": "macOS",
+    "osVersion": "14.4.1",
+    "model": "MacBook Pro 16",
+    "complianceStatus": "compliant",
+    "encryptionEnabled": true,
+    "firewallEnabled": true,
+    "screenLockEnabled": true,
+    "antivirusStatus": "healthy",
+    "lastCheckInAt": "2026-05-01T20:01:00Z",
+    "riskScore": 18,
+    "riskLevel": "low",
+    "riskReasons": [
+      "Device is within baseline policy."
+    ]
+  },
+  {
+    "deviceId": "mdm-win-9122",
+    "deviceName": "BER-HR-WIN-122",
+    "serialNumber": "PF3HR9122",
+    "assignedUser": "Klara Weiss",
+    "department": "Human Resources",
+    "location": "Berlin",
+    "platform": "Windows",
+    "osVersion": "unknown",
+    "model": "EliteBook 840",
+    "complianceStatus": "non_compliant",
+    "encryptionEnabled": false,
+    "firewallEnabled": false,
+    "screenLockEnabled": false,
+    "antivirusStatus": "unknown",
+    "lastCheckInAt": "2026-03-18T11:20:00Z",
+    "riskScore": 97,
+    "riskLevel": "critical",
+    "riskReasons": [
+      "Device is unenrolled or reporting unknown compliance state.",
+      "Last check-in is more than 30 days old."
+    ]
+  }
+]

@@ -1,0 +1,80 @@
+[
+  {
+    "logId": "log-2001",
+    "deviceId": "mdm-mac-1001",
+    "userId": "u-1042",
+    "timestamp": "2026-05-01T17:04:00Z",
+    "eventType": "firewall_disabled",
+    "severity": "high",
+    "sourceIp": "10.24.18.44",
+    "geoLocation": "New York, US",
+    "description": "Firewall setting changed outside normal patch window.",
+    "isSuspicious": true,
+    "detectionRule": "Unexpected local firewall disablement"
+  },
+  {
+    "logId": "log-2002",
+    "deviceId": "mdm-ios-2214",
+    "userId": "u-2214",
+    "timestamp": "2026-05-01T12:11:00Z",
+    "eventType": "root_indicator",
+    "severity": "critical",
+    "sourceIp": "172.17.5.30",
+    "geoLocation": "Chicago, US",
+    "description": "Mobile posture check detected jailbreak signature.",
+    "isSuspicious": true,
+    "detectionRule": "Mobile root detection"
+  },
+  {
+    "logId": "log-2003",
+    "deviceId": "mdm-win-7840",
+    "userId": "u-7840",
+    "timestamp": "2026-05-01T08:30:00Z",
+    "eventType": "encryption_disabled",
+    "severity": "high",
+    "sourceIp": "10.34.77.18",
+    "geoLocation": "London, UK",
+    "description": "Disk encryption agent reported suspension after policy drift.",
+    "isSuspicious": true,
+    "detectionRule": "Disk encryption regression"
+  },
+  {
+    "logId": "log-2004",
+    "deviceId": "mdm-android-3318",
+    "userId": "u-3318",
+    "timestamp": "2026-04-29T21:48:00Z",
+    "eventType": "screen_lock_disabled",
+    "severity": "high",
+    "sourceIp": "10.55.90.21",
+    "geoLocation": "Austin, US",
+    "description": "Required screen lock posture check failed.",
+    "isSuspicious": true,
+    "detectionRule": "Screen lock policy drift"
+  },
+  {
+    "logId": "log-2005",
+    "deviceId": "mdm-win-9122",
+    "userId": "u-9122",
+    "timestamp": "2026-04-18T08:45:00Z",
+    "eventType": "missing_checkin",
+    "severity": "critical",
+    "sourceIp": "unknown",
+    "geoLocation": "Berlin, DE",
+    "description": "Endpoint has not checked in during the expected telemetry window.",
+    "isSuspicious": true,
+    "detectionRule": "Stale MDM check-in"
+  },
+  {
+    "logId": "log-2006",
+    "deviceId": "mdm-mac-4450",
+    "userId": "u-4450",
+    "timestamp": "2026-05-01T20:05:00Z",
+    "eventType": "compliance_check",
+    "severity": "low",
+    "sourceIp": "10.45.11.8",
+    "geoLocation": "San Francisco, US",
+    "description": "Device passed scheduled compliance validation.",
+    "isSuspicious": false,
+    "detectionRule": "Nightly compliance validation"
+  }
+]

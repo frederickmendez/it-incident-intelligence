@@ -1,0 +1,41 @@
+ticket_id,created_at,category,service,priority,title,description,status,impact,urgency
+INC-1001,2026-04-29T08:10:00Z,Access,Identity,P3,Users locked out after MFA reset,Login failures after policy push,Open,high,high
+INC-1002,2026-04-29T07:25:00Z,Network,Network Core,P2,VPN disconnects for remote staff,Frequent VPN drops every 10 minutes,Open,high,medium
+INC-1003,2026-04-28T19:03:00Z,Email,Collaboration,P3,Outlook mailbox sync delayed,Inbound mail delayed for support team,Open,medium,medium
+INC-1004,2026-04-28T15:41:00Z,Application,Customer Portal,P2,Portal timeout during checkout,Service unavailable on checkout path,Open,critical,high
+INC-1005,2026-04-28T12:22:00Z,Infrastructure,Compute,P4,Low CPU alert on reporting VM,VM appears idle but alert keeps firing,Resolved,low,low
+INC-1006,2026-04-27T18:05:00Z,Access,Identity,P2,Password reset emails not delivered,Users cannot access reset link,Open,high,high
+INC-1007,2026-04-27T14:44:00Z,Network,Network Core,P2,DNS resolution failure in branch office,Branch office cannot reach internal services,Open,high,high
+INC-1008,2026-04-27T10:18:00Z,Application,Customer Portal,P1,Portal outage in EU region,Customer portal down for all EU users,Open,critical,critical
+INC-1009,2026-04-26T21:15:00Z,Access,Identity,P3,New hires missing app permissions,Access requests stuck in pending state,Open,medium,medium
+INC-1010,2026-04-26T16:01:00Z,Email,Collaboration,P3,SMTP relay failure for alerts,Automated alerts not delivered,Open,medium,high
+INC-1011,2026-04-25T11:33:00Z,Application,Customer Portal,P2,Checkout API returns 500 error,Failed dependency call to payment gateway,Open,critical,high
+INC-1012,2026-04-25T09:08:00Z,Network,Network Core,P3,Packet loss on VPN concentrator,Latency spikes for remote employees,Open,high,medium
+INC-1013,2026-04-24T18:17:00Z,Access,Identity,P4,Single user login issue,Incorrect password entered repeatedly,Resolved,low,low
+INC-1014,2026-04-24T13:40:00Z,Infrastructure,Storage,P3,Unattached disk still incurring cost,Disk left after decommission workflow,Open,medium,low
+INC-1015,2026-04-23T22:57:00Z,Application,Customer Portal,P2,Search endpoint degraded,Timeouts under moderate traffic,Open,high,medium
+INC-1016,2026-04-23T08:35:00Z,Access,Identity,P3,MFA code delivery delayed,Users waiting over 2 minutes for login codes,Open,medium,medium
+INC-1017,2026-04-22T19:09:00Z,Email,Collaboration,P4,Shared mailbox permission confusion,Team cannot see shared folder,Open,low,low
+INC-1018,2026-04-22T14:22:00Z,Network,Network Core,P2,VPN disconnects for remote staff,Frequent VPN drops every 15 minutes,Open,high,high
+INC-1019,2026-04-21T17:11:00Z,Application,Customer Portal,P1,Payment workflow outage,Checkout service unavailable globally,Open,critical,critical
+INC-1020,2026-04-21T08:02:00Z,Access,Identity,P3,Users locked out after MFA reset,Login failures after policy push,Open,high,high
+INC-1021,2026-04-20T12:16:00Z,Network,Network Core,P2,DNS resolution failure in branch office,Cannot resolve internal app domains,Open,high,medium
+INC-1022,2026-04-19T16:45:00Z,Application,Customer Portal,P3,Portal timeout during checkout,Intermittent timeout from cart to payment,Open,high,high
+INC-1023,2026-04-18T10:05:00Z,Email,Collaboration,P3,Outlook mailbox sync delayed,Delayed inbound mail for service desk queue,Open,medium,medium
+INC-1024,2026-04-17T09:33:00Z,Access,Identity,P3,Password reset emails not delivered,Reset workflow reports failed mail send,Open,high,high
+INC-1025,2026-04-16T19:55:00Z,Application,Customer Portal,P2,Checkout API returns 500 error,Payment dependency timeout,Open,critical,high
+INC-1026,2026-04-15T13:12:00Z,Network,Network Core,P3,Packet loss on VPN concentrator,Remote session lag and disconnects,Open,medium,medium
+INC-1027,2026-04-14T11:45:00Z,Infrastructure,Compute,P4,Idle VM running in dev subscription,0 percent CPU for 7 days,Open,low,low
+INC-1028,2026-04-13T07:40:00Z,Access,Identity,P2,Users locked out after MFA reset,Major lockout event after policy update,Open,critical,high
+INC-1029,2026-04-12T16:52:00Z,Application,Customer Portal,P2,Portal timeout during checkout,Payment step unavailable,Open,critical,high
+INC-1030,2026-04-11T09:17:00Z,Network,Network Core,P2,VPN disconnects for remote staff,Remote teams cannot stay connected,Open,high,high
+INC-1031,2026-04-10T18:02:00Z,Email,Collaboration,P4,Newsletter send delayed,Bulk mail backlog resolved later,Resolved,low,low
+INC-1032,2026-04-09T15:28:00Z,Access,Identity,P3,New hires missing app permissions,Manual provisioning queue delayed,Open,medium,medium
+INC-1033,2026-04-08T12:50:00Z,Application,Customer Portal,P1,Portal outage in EU region,Regional service down for customers,Open,critical,critical
+INC-1034,2026-04-07T10:24:00Z,Network,Network Core,P3,DNS resolution failure in branch office,Office cannot resolve SSO endpoint,Open,high,high
+INC-1035,2026-04-06T08:43:00Z,Infrastructure,Storage,P4,Unattached snapshot accumulation,Old snapshots not cleaned up,Open,low,low
+INC-1036,2026-04-05T17:38:00Z,Access,Identity,P2,Password reset emails not delivered,Reset token service failed,Open,high,high
+INC-1037,2026-04-04T13:59:00Z,Application,Customer Portal,P2,Payment workflow outage,Checkout unavailable for credit cards,Open,critical,critical
+INC-1038,2026-04-03T09:05:00Z,Network,Network Core,P3,Packet loss on VPN concentrator,Increased retransmits on backbone,Open,medium,medium
+INC-1039,2026-04-02T11:21:00Z,Email,Collaboration,P3,SMTP relay failure for alerts,Alerting emails bounced overnight,Open,medium,high
+INC-1040,2026-04-01T07:56:00Z,Access,Identity,P3,MFA code delivery delayed,OTP provider latency increased,Open,medium,medium
