@@ -92,54 +92,6 @@ Packages the suite into an executive-ready summary with export concepts, module 
 
 A short looping product preview that moves through Overview, Cloud Cost, MDM Security, Ticket Classifier, Sentinel Insight, and Reports in one recruiter-friendly README asset.
 
-## Video Demo
-
-Future long-form demo target: `docs/demo/nexusops-walkthrough.mp4`
-
-[Watch the demo](https://your-demo-link-here)
-
-Suggested longer walkthrough script:
-
-1. Start on Overview and explain the command-center concept.
-2. Call out the global risk score and why a unified top-level summary matters.
-3. Open Cloud Cost Auditor and show estimated monthly waste plus optimization candidates.
-4. Open MDM Security and show how high-risk devices are surfaced.
-5. Open Ticket Classifier and explain P1 scoring, SLA risk, and business impact.
-6. Open Sentinel Insight and show how alerts and incidents are framed for SOC-style triage.
-7. Open Reports and explain executive summaries plus export-ready reporting intent.
-8. End with the architecture story: modular routes, typed mock data, and explainable logic separated from UI.
-
-## Recommended Recording Plan
-
-### Screenshots To Capture
-
-- Full Overview page
-- Cloud Cost top section
-- Cloud Cost table section
-- MDM Security top section
-- MDM Security tables
-- Ticket Classifier queue
-- Sentinel Insight alerts
-- Reports page
-- Sidebar navigation
-- Command console
-
-### Video Clips To Record
-
-- 60 to 90 second full product walkthrough
-- 15 second sidebar navigation clip
-- 20 second Cloud Cost Auditor clip
-- 20 second Sentinel Insight clip
-- 20 second Ticket Classifier clip
-
-### Recommended Tools
-
-- OBS Studio
-- Loom
-- Screen Studio on macOS
-- Windows Xbox Game Bar on Windows
-- Browser screenshots for still captures
-
 ## Architecture
 
 NexusOps is organized so UI, deterministic logic, and mock datasets stay clearly separated. That makes the project easier to explain in interviews and easier to evolve toward real integrations later.
