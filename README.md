@@ -94,7 +94,7 @@ A short looping product preview that moves through Overview, Cloud Cost, MDM Sec
 
 ## Architecture
 
-NexusOps is organized so UI, deterministic logic, and mock datasets stay clearly separated. That makes the project easier to explain in interviews and easier to evolve toward real integrations later.
+NexusOps is organized so UI, deterministic logic, and mock datasets stay clearly separated. That makes the project easier to explain and easier to evolve toward real integrations later.
 
 ```text
 +---------------------------+
